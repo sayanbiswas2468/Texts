@@ -20,7 +20,7 @@ function LeftSidebar() {
                     return (
                         <Link href={link.route}
                             key={link.label}
-                            className={`leftsidebar_link ${isActive && 'bg-primary-500'}`}
+                            className={`leftsidebar_link ${isActive && 'bg-[#1927c0] text-white'} `}
                         >
                             <Image
                                 src={link.imgURL}
@@ -29,7 +29,7 @@ function LeftSidebar() {
                                 height={24}
                             />
 
-                            <p className='text-light-1 max-lg:hidden'>{link.label}</p>
+                            <p className='text-white max-lg:hidden'>{link.label}</p>
 
                         </Link>
                     )
@@ -49,9 +49,7 @@ function LeftSidebar() {
                                 width={24}
                                 height={24}
                             />
-
-
-                            <p className='text-light-2 max-lg:hidden'>
+                            <p className='text-white max-lg:hidden'>
                                 Logout
                             </p>
                         </div>
